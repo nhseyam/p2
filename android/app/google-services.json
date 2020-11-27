@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "38248832289",
+    "firebase_url": "https://e-shop-986eb.firebaseio.com",
+    "project_id": "e-shop-986eb",
+    "storage_bucket": "e-shop-986eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38248832289:android:f919aa04b121e88d113260",
+        "android_client_info": {
+          "package_name": "com.nahidhasan.eshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38248832289-elpfhgrl0idakbkr0i4ko8qpa65hh1cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nahidhasan.eshop",
+            "certificate_hash": "11bc85c399dc5fb6b24ff3a0227d9ccb08aabf08"
+          }
+        },
+        {
+          "client_id": "38248832289-tsr53it3upllr5rgob1m6g4o3nupesa8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLUyS4__HwLX-4N3Cl4Q32UwGgWVmFgnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38248832289-tsr53it3upllr5rgob1m6g4o3nupesa8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
