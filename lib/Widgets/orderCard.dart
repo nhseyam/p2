@@ -49,92 +49,90 @@ Widget sourceOrderInfo(ItemModel model, BuildContext context,
     {Color background}) {
   width = MediaQuery.of(context).size.width;
 
-  return Expanded(
-    child: Container(
-      color: Colors.grey[100],
-      height: 140,
-      width: width,
-      child: Row(
-        children: [
-          Image.network(
-            model.thumbnailUrl,
-            width: 140,
-            height: 140,
-          ),
-          SizedBox(width: 10),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(height: 5),
-                Container(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Text(
-                          model.title,
-                          style: TextStyle(color: Colors.black, fontSize: 16),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(height: 5),
-                Container(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Text(
-                          model.shortInfo,
-                          style: TextStyle(color: Colors.black45, fontSize: 8),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                SizedBox(height: 20),
-                Row(
+  return Container(
+    color: Colors.grey[100],
+    height: 140,
+    width: width,
+    child: Row(
+      children: [
+        Image.network(
+          model.thumbnailUrl,
+          width: 140,
+          height: 140,
+        ),
+        SizedBox(width: 10),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: 5),
+              Container(
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
                   children: [
-                    SizedBox(width: 5),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(top: 5),
-                          child: Row(
-                            children: [
-                              AutoSizeText(
-                                r"Total Price: ",
-                                style:
-                                    TextStyle(fontSize: 14, color: Colors.grey),
-                                maxLines: 1,
-                              ),
-                              AutoSizeText(
-                                r'$',
-                                style: TextStyle(
-                                    fontSize: 15, color: Colors.green),
-                                maxLines: 1,
-                              ),
-                              AutoSizeText(
-                                (model.price).toString(),
-                                style: TextStyle(
-                                    fontSize: 15, color: Colors.green),
-                                maxLines: 1,
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                    Expanded(
+                      child: Text(
+                        model.title,
+                        style: TextStyle(color: Colors.black, fontSize: 16),
+                      ),
+                    )
                   ],
                 ),
-              ],
-            ),
-          )
-        ],
-      ),
+              ),
+              SizedBox(height: 5),
+              Container(
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Text(
+                        model.shortInfo,
+                        style: TextStyle(color: Colors.black45, fontSize: 8),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  SizedBox(width: 5),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 5),
+                        child: Row(
+                          children: [
+                            AutoSizeText(
+                              r"Total Price: ",
+                              style:
+                                  TextStyle(fontSize: 14, color: Colors.grey),
+                              maxLines: 1,
+                            ),
+                            AutoSizeText(
+                              r'$',
+                              style: TextStyle(
+                                  fontSize: 15, color: Colors.green),
+                              maxLines: 1,
+                            ),
+                            AutoSizeText(
+                              (model.price).toString(),
+                              style: TextStyle(
+                                  fontSize: 15, color: Colors.green),
+                              maxLines: 1,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        )
+      ],
     ),
   );
 }
